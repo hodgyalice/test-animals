@@ -7,6 +7,15 @@ p, h2, button {
 	background: #00A383;
 }
 
+#secondSection {
+	min-height: 610px;
+	background: #00A383;
+}
+
+#thirdSection {
+	min-height: 610px;
+	background: #00A383;
+}
 .imageWrp img{
 	height: 200px;
 }
@@ -117,3 +126,6 @@ p, h2, button {
 }
 
 
+.answer {
+	display: none;
+}
