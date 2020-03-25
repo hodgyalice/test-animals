@@ -10,13 +10,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600&display=swap&subset=cyrillic,latin-ext,vietnamese" rel="stylesheet">
 </head>
 <body>
+	<div class="preloader">
+	  <div class="preloader__row">
+	    <div class="preloader__item"></div>
+	    <div class="preloader__item"></div>
+	  </div>
+	</div>
 	<section id="mainSection">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="wrapperTest">
+					<div class="wrapperTest" id="wrpTest">
 						<div class="imageWrp">
-							<img src="image/animal1.png" alt="">
+							<img src="image/animal.png" alt="">
 						</div>
 						<h2>Какое у Вас тотемное животное?</h2>
 						<a href="askFirst.html">Начать тест</a>
@@ -27,7 +33,15 @@
 		</div>
 	</section>
 	
-	
+	<script>
+  	window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    },500);
+  	}
+	</script>
  	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
